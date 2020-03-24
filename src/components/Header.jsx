@@ -1,37 +1,63 @@
-import React from 'react'
-import logo from '../images/rtf-logo.png'
+import React from "react";
+import { NavLink, Link } from "react-router-dom";
+import logo from "../images/output-onlinepngtools.png";
 
 const Header = () => {
   return (
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-          <img src={logo} alt=""/>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <Link to="/">
+            <img src={logo} alt="" />
+          </Link>
         </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
         </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home
+        <div className="collapse navbar-collapse" id="navbarResponsive">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item active">
+              <a>
+                <NavLink className="nav-link" to="/" className="nav-link">
+                  Huvudsida
+                </NavLink>
                 <span class="sr-only">(current)</span>
               </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+            </li>
+            <li className="nav-item">
+              <a>
+                <NavLink to="/about" className="nav-link">
+                  Om oss
+                </NavLink>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a>
+                <NavLink to="/about" className="nav-link">
+                  Tjänster
+                </NavLink>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a>
+                <NavLink to="/about" className="nav-link">
+                  Kontakt
+                </NavLink>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
-}
+};
 
-export default Header
+export default Header;

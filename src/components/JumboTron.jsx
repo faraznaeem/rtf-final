@@ -1,18 +1,15 @@
 import React from "react";
+import Card from './Card'
 
 const JumboTron = () => {
   return (
     <>
       <br />
-      <div className="jumbotron">
-        <div className="container">
-          <h1>Hello, world!</h1>
-          <p>...</p>
-          <p>
-            <a className="btn btn-primary btn-lg" href="#" role="button">
-              Learn more
-            </a>
-          </p>
+      <div className="container">
+        <div className="row">
+          <Card linkAddress={"About"} />
+          <Card linkAddress={"about"} />
+          <Card linkAddress={"about"} />
         </div>
       </div>
     </>

@@ -1,17 +1,21 @@
 import React from "react";
 import Content from "./components/Content";
 import Header from "./components/Header";
-
 import Footer from "./components/Footer";
+import { Switch, Route } from "react-router-dom";
+import About from "./components/About";
 
-function App() {
+const App= () => {
   return (
     <>
       <Header />
-      <div className="container">
-        <Content />
-      </div>
-      <Footer />
+      <Switch>
+        <Route exact path="/about" component={About} />
+        <div className="container">
+          <Content />
+        </div>
+        <Footer />
+      </Switch>
     </>
   );
 }
