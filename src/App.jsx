@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Switch, Route } from "react-router-dom";
 import About from "./components/About";
+import ContactForm from "./components/ContactForm";
 
 const App= () => {
   return (
@@ -11,11 +12,12 @@ const App= () => {
       <Header />
       <Switch>
         <Route exact path="/about" component={About} />
+        <Route exact path="/contact" component={ContactForm} />
         <div className="container">
           <Content />
         </div>
-        <Footer />
       </Switch>
+      <Footer />
     </>
   );
 }

@@ -18,7 +18,7 @@ const Card = props => {
               className="nav-link btn btn-primary"
               to={props.linkAddress}
             >
-              {props.linkAddress}
+              {props.name}
             </NavLink>
           </div>
         </div>
