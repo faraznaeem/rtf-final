@@ -5,8 +5,11 @@ import Carousel from "./Carousel";
 const Content = () => {
   return (
     <>
-    <JumboTron/>
+    <main role="main">
+    <br/>
     <Carousel/>
+    <JumboTron/>
+    </main>
 
     </>
   );
