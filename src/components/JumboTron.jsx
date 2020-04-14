@@ -9,7 +9,7 @@ const JumboTron = () => {
         <div className="row">
           <Card linkAddress={"About"} name={"Om oss"} />
           <Card linkAddress={"Services"} name={"Tjänster"} />
-          <Card linkAddress={"about"} name={"Om oss"} />
+          <Card linkAddress={"Contact"} name={"Kontakta oss"} />
         </div>
       </div>
     </>
